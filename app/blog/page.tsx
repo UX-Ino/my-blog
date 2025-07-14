@@ -1,4 +1,3 @@
-import TagSection from '@/app/_components/TagSection';
 import ProfileSection from '@/app/_components/ProfileSection';
 import ContactSection from '@/app/_components/ContactSection';
 import { getTags, getPublishedPosts } from '@/lib/notion';
