@@ -2,7 +2,6 @@ import { Client } from '@notionhq/client';
 import type { Post, TagFilterItem } from '@/types/blog';
 import type {
   PageObjectResponse,
-  PersonUserObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
 import { NotionToMarkdown } from 'notion-to-md';
 import { unstable_cache } from 'next/cache';
@@ -28,6 +27,7 @@ function getPostMetadata(page: PageObjectResponse): Post {
     }
   };
 
+
   return {
     id: page.id,
     title: properties.Title.type === 'title' ? (properties.Title.title[0]?.plain_text ?? '') : '',
@@ -42,7 +42,7 @@ function getPostMetadata(page: PageObjectResponse): Post {
         : [],
     author:
       properties.Author.type === 'people'
-        ? ((properties.Author.people[0] as PersonUserObjectResponse)?.name ?? '')
+        ? properties.Author.people[0]?.id ?? ''
         : '',
     date: properties.Date.type === 'date' ? (properties.Date.date?.start ?? '') : '',
     modifiedDate: page.last_edited_time,

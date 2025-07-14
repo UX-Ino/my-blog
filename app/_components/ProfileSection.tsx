@@ -37,7 +37,7 @@ export default function ProfileSection() {
           </div>
 
           <div className="text-center">
-            <h3 className="text-lg font-bold">짐코딩</h3>
+            <h3 className="text-lg font-bold">아이노코딩</h3>
             <p className="text-primary text-sm">Full Stack Developer</p>
           </div>
 

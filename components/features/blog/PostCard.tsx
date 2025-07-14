@@ -9,6 +9,7 @@ import { formatDate } from '@/lib/date';
 
 interface PostCardProps {
   post: Post;
+  isFirst?: boolean;
 }
 
 export function PostCard({ post }: PostCardProps) {
@@ -35,7 +36,6 @@ export function PostCard({ post }: PostCardProps) {
               variant="secondary"
               className="bg-primary/10 text-primary hover:bg-primary/20 font-medium transition-colors"
             >
-              {tag.name}
               {tag}
             </Badge>
           ))}
