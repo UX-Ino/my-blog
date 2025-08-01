@@ -1,9 +1,4 @@
-import { getTags, getPublishedPosts } from '@/lib/notion';
 import { Metadata } from 'next';
-
-interface HomeProps {
-  searchParams: Promise<{ tag?: string; sort?: string }>;
-}
 
 export const metadata: Metadata = {
   title: '홈',
@@ -13,7 +8,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function Home({ searchParams }: HomeProps) {
+export default async function Home() {
   return (
     <>
       <section className="section section01 home">inocode</section>

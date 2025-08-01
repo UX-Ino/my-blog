@@ -1,6 +1,4 @@
 'use client';
-import Header2 from '@/components/layouts/Header2';
-import Footer2 from '@/components/layouts/Footer2';
 import '../../../../assets/style/style.scss';
 import { useEffect } from 'react';
 

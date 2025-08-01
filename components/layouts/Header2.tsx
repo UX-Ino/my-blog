@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/theme/ThemeToggle';
 
 export default function Header() {
   return (
