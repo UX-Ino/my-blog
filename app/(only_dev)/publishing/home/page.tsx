@@ -21,7 +21,7 @@ export default function Home() {
             <div className="bg-circle"></div>
           </div>
 
-          <button className="menu-toggle" onclick="toggleMenu()">
+          <button className="menu-toggle" onClick={() => {}}>
             ☰
           </button>
 
