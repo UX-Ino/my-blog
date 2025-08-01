@@ -1,0 +1,315 @@
+// ******************** code comments ********************
+// 기본 변수 세팅
+// $global-background-color: #ffffff; - 기본 배경 컬러 설정
+// $global-font-color: #000000; - 기본 폰트 컬러 설정
+// $global-font-size: 10px !default; - 기본 폰트 크기 설정
+// ******************** code comments ********************
+$global-background-color: #ffffff;
+$global-font-color: #111111;
+$global-font-size: 10px !default;
+$global-mobile-width: 1023px;
+
+// ******************** code comments ********************
+// 언어별 설정 <html lang="">
+// font-familu, line-height, word-break, word-wrap, letter-spacing
+// ******************** code comments ********************
+$global-line-height: (
+  "ko": (1.15,
+  ),
+  "en": (1.15,
+  ),
+  "ja": (1.15,
+  ),
+  "zh": (1.15,
+  ),
+);
+$global-word-break: (
+  "ko": (keep-all,
+  ),
+  "en": (break-all,
+  ),
+  "ja": (break-all,
+  ),
+  "zh": (break-all,
+  ),
+);
+$global-word-wrap: (
+  "ko": (break-word,
+  ),
+  "en": (break-word,
+  ),
+  "ja": (break-word,
+  ),
+  "zh": (break-word,
+  ),
+);
+$global-letter-spacing: (
+  "ko": (-0.02em,
+  ),
+  "en": (-0.02em,
+  ),
+  "ja": (-0.02em,
+  ),
+  "zh": (-0.02em,
+  ),
+);
+
+// ******************** code comments ********************
+// z-index 세팅 및 관리
+// 기본 z-index를 기준으로 +, - 하여 관리 한다
+// 변수명은 되도록 직관적으로 네이밍 한다
+// 프로젝트에서 사용되는 모든 z-index 값은 아래 정리 되어야 한다
+// 단, z-index:1, z-index:2 등의 10이하 단위들은 컨텐츠내 css 에서 관리한다
+// ******************** code comments ********************
+$zindex-base: 0; // 기본 z-index
+$zindex-loading: $zindex-base + 3200; // progress indicator, loading spinner
+$zindex-notification: $zindex-base + 3100; // toast, snackbar
+$zindex-modal: $zindex-base + 3000; // dialog, modal, lightbox
+$zindex-floating: $zindex-base + 2500; // FAB, floating banner
+$zindex-header: $zindex-base + 2000; // GNB, header
+$zindex-side-area: $zindex-base + 1000; // drawer, panel, side navigation
+$zindex-sticky: $zindex-base + 500; // anchor, tab, (sticky) banner
+$zindex-picker: $zindex-base + 200; // menu, select, date/time picker, color picker content area
+$zindex-guide: $zindex-base + 100; // tooltip, popover, coach mark
+// ******************** code comments ********************
+// spacing
+// ******************** code comments ********************
+// basic spacing - 4, 8배수 사용
+$space04: 4;
+$space08: 8;
+$space12: 12;
+$space16: 16;
+$space24: 24;
+$space32: 32;
+$space40: 40;
+$space64: 64;
+
+// ******************** code comments ********************
+// 컬러값 변수 설정
+// 폰트컬러(color), 배경컬러(background-color), 라인컬러(border)으로 구분한다
+// 변수 네이밍에 컬러 코드 값을 사용하여 작성한다
+// 프로젝트 초반에 컬러값이 정리가 되지 않을 경우, 변수를 먼저 세팅하고 나중에 디자인팀에 현재 설정된 변수 컬러값을 전달하여 불필요한 컬러값들을 정리 하도록 한다
+// ******************** code comments ********************
+$font-000000: #000000;
+$font-111111: #111111;
+$font-ffffff: #ffffff;
+$font-e1002a: #e1002a;
+$font-4051b8: #4051b8;
+$font-00bca9: #00bca9;
+$font-ffe53f: #ffe53f;
+$font-222222: #222222;
+$font-333333: #333333;
+$font-555555: #555555;
+$font-666666: #666666;
+$font-999999: #999999;
+$font-cccccc: #cccccc;
+$font-444444: #444444;
+$font-f0f2f6: #f0f2f6; // basic
+$font-f4f6ff: #f4f6ff; // basic hover
+$font-e5eaff: #e5eaff; // basic active
+$font-012dff: #012dff; // primary basic
+$font-0027e3: #0027e3; // primary hover
+$font-0021bc: #0021bc; // primary active
+$font-0032e9: #0032e9;
+$font-ff0101: #ff0101; //error message
+$font-878b95: #878b95; //disabled
+$font-22335a: #22335a;
+$font-05740a: #05740a;
+$font-4e5559: #4e5559;
+$font-c95d00: #c95d00;
+$font-4c579f: #4c579f;
+$font-af403a: #af403a;
+$font-dddddd: #dddddd;
+$font-ffffff99: #ffffff99;
+
+$bg-eeeeee: #eeeeee;
+$bg-f5f5f5: #f5f5f5;
+$bg-f9f9f9: #f9f9f9;
+$bg-ffe53f: #ffe53f;
+$bg-e1002a: #e1002a;
+$bg-111111: #111111;
+$bg-222222: #222222;
+$bg-333333: #333333;
+$bg-444444: #444444;
+$bg-555555: #555555;
+$bg-666666: #666666;
+$bg-2b2b2b: #2b2b2b;
+$bg-e4e9f1: #e4e9f1;
+$bg-4051b8: #4051b8;
+$bg-000000: #000000;
+$bg-f0f2f6: #f0f2f6; // basic
+$bg-f4f6ff: #f4f6ff; // basic hover
+$bg-e5eaff: #e5eaff; // basic active
+$bg-012dff: #012dff; // primary basic
+$bg-0027e3: #0027e3; // primary hover
+$bg-0021bc: #0021bc; // primary active
+$bg-f8f8f9: #f8f8f9; // disabled
+$bg-0032e9: #0032e9;
+$bg-4c6fd8: #4c6fd8;
+$bg-878b95: #878b95;
+$bg-dddedf: #dddedf;
+$bg-ffffff: #ffffff;
+$bg-eff3ff: #eff3ff;
+$bg-fce5e5: #fce5e5;
+$bg-e9ebef: #e9ebef;
+$bg-ebf0ff: #ebf0ff;
+$bg-b3c0ff: #b3c0ff;
+$bg-edf7ed: #edf7ed;
+$bg-dfe5f8: #dfe5f8;
+$bg-dddddd: #dddddd;
+$bg-49bcf5: #49bcf5;
+$bg-fee71f: #fee71f;
+$bg-ff2e4d: #ff2e4d;
+$bg-ff0101: #ff0101; //error label
+$bg-48deb1: #48deb1;
+$bg-1e2978: #1e2978;
+$bg-222a30: #222a30;
+$bg-4e5559: #4e5559;
+$bg-012dff0a: #012dff0a;
+$bg-1111110a: #1111110a;
+$bg-0000004D: #0000004d;
+$bg-fff0de: #fff0de;
+$bg-eff0fb: #eff0fb;
+$bg-fcedf2: #fcedf2;
+$bg-ccebf9: #ccebf9;
+$bg-cedff6: #cedff6;
+$bg-ffffff4d: #ffffff4d;
+
+$line-4051b8: #4051b8;
+$line-ffe53f: #ffe53f;
+$line-e1002a: #e1002a;
+$line-ff0101: #ff0101;
+$line-111111: #111111;
+$line-222222: #222222;
+$line-cccccc: #cccccc;
+$line-dddddd: #dddddd;
+$line-e5e5e5: #e5e5e5;
+$line-f5f5f5: #f5f5f5;
+$line-eeeeee: #eeeeee;
+$line-666666: #666666;
+$line-999999: #999999;
+$line-000000: #000000;
+$line-f0f2f6: #f0f2f6; // basic
+$line-f4f6ff: #f4f6ff; // basic hover
+$line-e5eaff: #e5eaff; // basic active
+$line-012dff: #012dff; // primary basic
+$line-0027e3: #0027e3; // primary hover
+$line-0021bc: #0021bc; // primary active
+$line-0032e9: #0032e9;
+$line-878b95: #878b95; // disabled
+$line-dddedf: #dddedf;
+
+$line-ffffff: #ffffff;
+
+$custom-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+// 가이드 파일 변수 선언
+$guide-primary: #61dbfb;
+$guide-primary-content: #02485b;
+$guide-primary-dark: #2fd0fa;
+$guide-primary-light: #93e6fc;
+
+$guide-secondary: #ce61fb;
+$guide-secondary-content: #41025b;
+$guide-secondary-dark: #bf2ffa;
+$guide-secondary-light: #dd93fc;
+
+$guide-background: #eff0f1;
+$guide-foreground: #fbfbfb;
+
+$guide-success: #61fb61;
+$guide-warning: #fbfb61;
+$guide-error: #fb6161;
+$guide-success-content: #025b02;
+$guide-warning-content: #5b5b02;
+$guide-error-content: #5b0202;
+
+$guide-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+
+// ******************** code comments ********************
+// 프로젝트 별로 세팅 하기
+// 폰트 굵기 참고용
+// Thin 100
+// Light 300
+// Regular 400
+// Medium 500
+// Bold 700
+// Black 900
+// 프로젝트내에서 사용되는 폰트 굵기를 모아놓고 관리한다
+// ******************** code comments ********************
+
+// ******************** code comments ********************
+// 프로젝트 별로 세팅 하기
+// font size / line-height 참고
+// 24 / 36 - 1.5
+// 26 / 38 - 1.46
+// 28 / 40 - 1.42
+// 30 / 42 - 1.4
+// 32 / 44 - 1.375
+// 34 / 46 - 1.35
+// 42 / 54 - 1.28
+// 48 / 64 - 1.33
+// ******************** code comments ********************
+
+$f104: 104;
+$l104: 1.2;
+
+$f80: 80;
+$l80: 1.2;
+
+$f72: 72;
+$l72: 1.3;
+
+$f64: 64;
+$l64: 1.2;
+
+$f48: 48;
+$l48: 1.3;
+
+$f40: 40;
+$l40: 1.3;
+
+$f32: 32;
+$l32: 1.3;
+
+$f24: 24;
+$l24: 1.3;
+
+$f20: 20;
+$l20: 1.5;
+
+$f18: 18;
+$l18: 1.5;
+
+$f16: 16;
+$l16: 1.5;
+
+$f14: 14;
+$l14: 1.5;
+
+$f12: 12;
+$l12: 1.5;
+
+// ******************** code comments ********************
+// flex 사용 참고용
+// flex: 1 1 1; - 자동으로 더 커지게 하고 자동으로 더 줄어들게 하고 기본 값은 없음
+// /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+// flex: 1 1 auto; - 자동으로 더 커지게 하고 자동으로 더 줄어들게 하고 기본값은 자동
+// /* flex-grow: 1; flex-shrink: 1; flex-basis: auto; */
+// flex: 1 1 500px; - 500보다 늘어날 수 있고 500이하로 줄어 들 수 있음, 기본값은 500
+// /* flex-grow: 1; flex-shrink: 1; flex-basis: 500px; */
+
+// /* flex-grow: 0; */ /* 기본값 - flex-basis 이상으로 안 늘어남 */
+// /* flex-grow: 1; */ /* flex-basis 보다 늘어남 */
+// flex-shrink: 1; /* 기본값 - flex-basis 크기 보다 줄어듬 */
+// flex-shrink: 0; /* flex-basis 크기를 최소값으로 고정함 */
+// ******************** code comments ********************
+
+// ******************** code comments ********************
+// box shadow 샘플
+// box-shadow: 8px 8px 8px 0 rgba(0,0,0,0.05);
+// PSD - box-shadow: 거리 거리 크기 스프레드 rgba(컬러,컬러,컬러,불투명도)
+// 박스 inset - 보더대신 서야 할 때
+// box-shadow: inset -1px 1px 0px 0px rgba(221,221,221,1);
+// 프로젝트내에서 사용하는 box shadow 를 모아놓고 관리한다
+// ******************** code comments ********************

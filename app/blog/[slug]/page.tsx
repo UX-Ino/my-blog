@@ -55,7 +55,6 @@ export async function generateMetadata({
   };
 }
 
-
 interface TocEntry {
   value: string;
   depth: number;
@@ -117,7 +116,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
   });
 
   return (
-    <div className="container py-6 md:py-8 lg:py-12">
+    <div className="notion container py-6 md:py-8 lg:py-12">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-[240px_1fr_240px] md:gap-8">
         <aside className="hidden md:block">{/* 추후 콘텐츠 추가 */}</aside>
         <section>

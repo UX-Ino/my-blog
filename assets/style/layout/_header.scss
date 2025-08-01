@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+// 전체 메뉴 히든처리 추가
+body {}
+
+.header {
+  position: fixed;
+  @include rem(top, 40);
+  @include rem(left, 60);
+  width: calc(100% - 12rem);
+  border-top: 2px solid #000;
+  @include rem(height, 90);
+
+  .header-top {
+    @include rem(padding, 0 16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    @include rem(height, 45);
+
+  }
+
+  .header-bottom {
+    @include rem(padding, 0 16);
+    @include rem(height, 45);
+    display: flex;
+    align-items: center;
+  }
+
+  .header-text {
+    @include f18();
+  }
+
+
+}
